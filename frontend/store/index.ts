@@ -65,9 +65,9 @@ export const makeStore = () =>
     reducer: persistedReducer,
     middleware: getDefaultMiddleware =>
       getDefaultMiddleware({
-        serializableCheck: {
-          ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-        },
+        // serializableCheck: {
+        //   ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+        // },
         // }).concat(logger),
       }),
   });
@@ -87,4 +87,4 @@ export type AppDispatch = typeof persistor.dispatch;
 export const wrapper = createWrapper<AppStore>(makeStore);
 export type RootState = ReturnType<typeof rootReducers>;
 
-export default makeStore;
+export default persistor;

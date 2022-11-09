@@ -23,6 +23,7 @@ import { useDispatch } from "react-redux";
 import { setCartLists } from "../../store/commerce";
 import { useSelector } from "react-redux";
 import { StoreState } from "../../store";
+import { AnyAction } from "@reduxjs/toolkit";
 
 export const TextBtn: React.FC<{
   children: string;
@@ -86,11 +87,16 @@ export const BuyButton: React.FC<{ id: number }> = ({ id }) => {
  * @params {number} id Product Detail Id
  * @returns Alert를 활용하여 장바구니로 이동시키거나 확인할 수 있음
  */
-export const BuyListButton: React.FC<{ id: number }> = ({ id }) => {
+export const BuyListButton: React.FC<{
+  id: number;
+  dispatch: Dispatch<AnyAction>;
+}> = ({ id, dispatch }) => {
   // const dispatch = useDispatch();
-  // const baguni = useSelector((state: StoreState) => state);
+  const baguni = useSelector((state: StoreState) => state);
   const putCartHandler = async (id: number) => {
-    const res = await putCart(id);
+    // const res = await putCart(id);
+    dispatch(setCartLists({ id }));
+    console.log(baguni);
   };
   return (
     <BuyListButtonStyle onClick={() => putCartHandler(id)}>

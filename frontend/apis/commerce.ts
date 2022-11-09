@@ -289,8 +289,6 @@ export const postOrderList = async (
   additionnalPost: string,
   orderUserName: string,
 ) => {
-  console.log(itemSeqList);
-
   const url = `order`;
   const data = {
     itemSeqList,

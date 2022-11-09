@@ -15,6 +15,7 @@ import RelatedProducts from "../../../components/commerce/products/[product-id]/
 import { wrapper } from "../../../store";
 import { setRelatedItemList } from "../../../store/commerce";
 import { useRouter } from "next/router";
+import { useDispatch } from "react-redux";
 
 interface IParams {
   productid: number;
@@ -30,6 +31,9 @@ const Product: NextPage<{ data: ItemObject }> = ({ data }) => {
     };
     setClick(seqid as string);
   }, [seqid]);
+
+  const dispatch = useDispatch();
+
   return (
     <Wrapper>
       <ProductSellCard
@@ -43,6 +47,7 @@ const Product: NextPage<{ data: ItemObject }> = ({ data }) => {
         plantZRName={data.plant?.plantZRName}
         growthWidth={data.plant?.growthWidth}
         growthHeight={data.plant?.growthHeight}
+        dispatch={dispatch}
       />
       <ProductCare
         itemInfo={data.itemInfo}

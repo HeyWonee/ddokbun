@@ -1,11 +1,11 @@
 export const CardHover = {
   hover: {
-    y: -10,
+    y: -15,
   },
 
   start: {
     opacity: 0,
-    y: 5,
+    y: 10,
   },
 
   end: {

@@ -1,11 +1,12 @@
 import Image from "next/image";
-import React from "react";
+import React, { Dispatch } from "react";
 import { Wrapper } from "./styles";
 import Temp from "../../../assets/temp.jpg";
 import ProductLabel from "../../Labels/ProductsLabel";
 import { BuyButton, BuyListButton } from "../../Button";
 import { ItemObject } from "../../../types/commerce/detail.interface";
 import ProductSummary from "../../../components/commerce/products/[product-id]/ProductSummary";
+import { AnyAction } from "@reduxjs/toolkit";
 
 interface SellItemObject extends ItemObject {
   tags?: string[];
@@ -13,6 +14,7 @@ interface SellItemObject extends ItemObject {
   plantZRName?: string;
   growthWidth?: number;
   growthHeight?: number;
+  dispatch: Dispatch<AnyAction>;
 }
 
 const ProductSellCard: React.FC<SellItemObject> = props => {
@@ -49,7 +51,7 @@ const ProductSellCard: React.FC<SellItemObject> = props => {
 
         <div className="button-wrap">
           <BuyButton id={props.itemSeq} />
-          <BuyListButton id={props.itemSeq} />
+          <BuyListButton id={props.itemSeq} dispatch={props.dispatch} />
         </div>
       </div>
     </Wrapper>
