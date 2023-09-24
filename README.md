@@ -24,37 +24,7 @@
 - **2022.10.10(월) ~ 2022.11.18(금)**
 
 <br>
-
-## ☃️ **Team**
-
-<table>
- <tr>
-    <td align="center"><a href="https://github.com/HeyWon22"><img src="README.assets/shin.png" width="80px;" alt=""></td>
-    <td align="center"><a href="https://github.com/cherry2250"><img src="README.assets/kim.jpg" width="80px;" alt=""></td>
-    <td align="center"><a href="https://github.com/heogeon0"><img src="README.assets/heo.jpg" width="80px;" alt=""></td>
-    <td align="center"><a href="https://github.com/RealShinyHand"><img src="README.assets/son.jpg" width="80px;" alt=""></td>
-    <td align="center"><a href="https://github.com/bigleaderman"><img src="README.assets/dong.jpg" width="80px;" alt=""></td>
-    <td align="center"><a href="https://github.com/Jaehwany"><img src="README.assets/jae.jpg" width="80px;" alt=""></td>
-  </tr>
-  <tr>
-    <td align="center">팀장, Frontend</td>
-    <td align="center">Frontend</td>
-    <td align="center">Frontend</td>
-    <td align="center">Backend</td>
-    <td align="center">Backend</td>
-    <td align="center">Backend</td>
-  </tr>
-     <tr>
-    <td align="center"><a href="https://github.com/"><sub><b>신혜원</b></td>
-    <td align="center"><a href="https://github.com/"><sub><b>김채리</b></td>
-    <td align="center"><a href="https://github.com/"><sub><b>허건녕</b></td>
-    <td align="center"><a href="https://github.com/"><sub><b>손광진</b></td>
-    <td align="center"><a href="https://github.com/"><sub><b>이동욱</b></td>
-    <td align="center"><a href="https://github.com/"><sub><b>이재환</b></td>
-  </tr>
-
-</table>
-     
+    
 <br>
 
 ## 📍 PPT
